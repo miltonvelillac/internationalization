@@ -19,3 +19,7 @@ ng build --prod --i18n-file src/i18n/messages.en.xlf --i18n-format xlf --i18n-lo
 
 ng build --prod --i18n-file src/i18n/messages.es.xlf --i18n-format xlf --i18n-locale es
 ng build --aot --output-path dist/internationalization/en --prod --i18n-file src/i18n/messages.en.xlf --i18n-format xlf --i18n-locale en
+
+ng build --aot --output-path dist/ --base-href /internationalization --prod --i18n-file src/i18n/messages.es.xlf --i18n-format xlf --i18n-locale es
+
+ng build --aot --output-path dist/ --base-href /internationalization/en --prod --i18n-file src/i18n/messages.en.xlf --i18n-format xlf --i18n-locale en
