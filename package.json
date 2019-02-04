@@ -10,7 +10,9 @@
     "e2e": "ng e2e",
     "extract-i18n": "ng xi18n --i18n-format xlf --output-path i18n --i18n-locale es && xliffmerge --profile xliffmerge.json",
     "start-en": "ng serve --configuration=en",
-    "start-es": "ng serve --configuration=es"
+    "start-es": "ng serve --configuration=es",
+    "build-en": "ng build --aot --output-path dist/en --base-href /internationalization/en --prod --i18n-file src/i18n/messages.en.xlf --i18n-format xlf --i18n-locale en",
+    "build-es": "ng build --aot --output-path dist/es --base-href /internationalization/es --prod --i18n-file src/i18n/messages.es.xlf --i18n-format xlf --i18n-locale es"
   },
   "private": true,
   "dependencies": {
