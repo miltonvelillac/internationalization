@@ -4,8 +4,8 @@
     <body>
       <trans-unit id="saludoID" datatype="html">
         <source>
-          Bienvenido a <x id="INTERPOLATION" equiv-text="{{ title }}"/>!
-        </source><target state="new">
+    Bienvenido a <x id="INTERPOLATION" equiv-text="{{ title }}"/>!
+  </source><target state="new">
           Welcome to <x id="INTERPOLATION" equiv-text="{{ title }}"/>!
         </target>
         <context-group purpose="location">
@@ -18,12 +18,17 @@
     <trans-unit id="linksId" datatype="html">
         <source>Aqui tenemos algunos links: </source>
         <target state="new">Here are some links to help you start: </target>
+        
+        <note priority="1" from="description">Links para visualizar en el inicio de la aplicacion</note>
+        <note priority="1" from="meaning">Links</note>
+      <context-group purpose="location"><context context-type="sourcefile">app/app.component.html</context><context context-type="linenumber">8</context></context-group></trans-unit><trans-unit id="linkOneId" datatype="html">
+        <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a>"/>Tour of Heroes<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/></source><target state="new"><x id="START_LINK" ctype="x-a" equiv-text="&lt;a>"/>Tour of Heroes!!!!!<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">13</context>
         </context-group>
-        <note priority="1" from="description">Lins para visualizar en el inicio de la aplicacion</note>
-        <note priority="1" from="meaning">Links</note>
+        <note priority="1" from="description">Link para visualizar la pagina de Heroes</note>
+        <note priority="1" from="meaning">LinkOne</note>
       </trans-unit></body>
   </file>
 </xliff>
