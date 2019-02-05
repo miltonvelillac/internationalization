@@ -24,4 +24,7 @@ ng build --aot --output-path dist/ --base-href /internationalization --prod --i1
 
 ng build --aot --output-path dist/en --base-href /internationalization/en --prod --i18n-file src/i18n/messages.en.xlf --i18n-format xlf --i18n-locale en
 
-ng build --aot --output-path dist/ --base-href /internationalization/es --prod --i18n-file src/i18n/messages.es.xlf --i18n-format xlf --i18n-locale es
+ng build --aot --output-path dist/es --base-href /internationalization/es --prod --i18n-file src/i18n/messages.es.xlf --i18n-format xlf --i18n-locale es
+
+
+ng build --output-path dist/en --base-href /internationalization/en --prod --i18n-file src/locale/messages.en.xlf --i18n-format xlf --i18n-locale en
